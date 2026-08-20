@@ -1,0 +1,3 @@
+Model,Architecture,Training Data,BLEU Score,Type
+Trained Seq2Seq,BiLSTM + Attention,50k pairs,0.7956,From Scratch
+Pre-trained MarianMT,Transformer,Millions of pairs,0.3824,Transfer Learning

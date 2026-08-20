@@ -1,0 +1,11 @@
+French,English (Reference),English (Predicted),BLEU Score
+vivez une vie dissolue.,live a riotous life.,live a riotous life.,1.0
+je suis occupée pour l'instant.,i'm busy right now.,i'm busy right now.,1.0
+est-ce que tu crois que tom est coupable ?,do you think tom is guilty?,do you think tom is guilty?,1.0
+pourquoi tout le monde aime les chats ?,why does everybody love cats?,why does everybody love cats?,1.0
+que te faut-il faire ?,what do you have to do?,what do you have to do?,1.0
+combien coûte la chemise ?,how much does the shirt cost?,how much does the shirt cost?,1.0
+j'atteste qu'il est le fils de dieu.,and i testify that this is the son of god.,the that he is the work of god.,7.551819280284158e-155
+elle et moi nous entendons bien.,she and i get on well.,she and i get on well.,1.0
+j'en ai assez !,i'm done with it.,i have enough of it.,1.2183324802375697e-231
+terminez-le avant qu'il ne s'échappe !,finish him off before he gets away.,finish him off before he gets away.,1.0

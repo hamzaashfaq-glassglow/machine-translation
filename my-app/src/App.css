@@ -1,0 +1,173 @@
+/* ── Brand colours ─────────────────────────────
+   Primary : #1B3D6E  (deep navy)
+   Surface : #FFFFFF  (white)
+   Page bg : #EEF2F7  (neutral tint — not a third brand colour)
+──────────────────────────────────────────────── */
+
+/* ── Layout ─────────────────────────────────── */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── Header ─────────────────────────────────── */
+.header {
+  background: #1B3D6E;
+  padding: 28px 24px 24px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header-sub {
+  margin-top: 6px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
+/* ── Main content ────────────────────────────── */
+.main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px 60px;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid #D0D9E4;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 640px;
+  overflow: hidden;
+}
+
+/* ── Panels ─────────────────────────────────── */
+.panel {
+  padding: 24px;
+}
+
+.panel + .panel {
+  border-top: 1px solid #D0D9E4;
+}
+
+.panel-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1B3D6E;
+  margin-bottom: 12px;
+}
+
+/* ── Input textarea ──────────────────────────── */
+.input-area {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  border: 1px solid #D0D9E4;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #1B3D6E;
+  background: #FFFFFF;
+  line-height: 1.6;
+  transition: border-color 0.15s;
+}
+
+.input-area::placeholder {
+  color: #A8B8CB;
+}
+
+.input-area:focus {
+  outline: none;
+  border-color: #1B3D6E;
+}
+
+/* ── Output box ──────────────────────────────── */
+.output-area {
+  min-height: 120px;
+  background: #EEF2F7;
+  border: 1px solid #D0D9E4;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 16px;
+  color: #1B3D6E;
+  line-height: 1.6;
+}
+
+.output-area.empty {
+  color: #A8B8CB;
+}
+
+.output-area.error-text {
+  color: #C0392B;
+}
+
+/* ── Action row ──────────────────────────────── */
+.action-row {
+  padding: 0 24px 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.translate-btn {
+  background: #1B3D6E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s;
+}
+
+.translate-btn:hover:not(:disabled) {
+  background: #254f8a;
+}
+
+.translate-btn:disabled {
+  background: #A8B8CB;
+  cursor: not-allowed;
+}
+
+/* ── Spinner ─────────────────────────────────── */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.35);
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: spin 0.65s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Footer ─────────────────────────────────── */
+.footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #A8B8CB;
+}
